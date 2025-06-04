@@ -1,0 +1,12 @@
+function getFirstPython(list) {
+    if (!list || list.length === 0) {
+        return 'There will be no Python developers';
+    }
+
+    const pythonDev = list.find(dev => dev.language === 'Python');
+
+    if (!pythonDev) {
+        return 'There will be no Python developers';
+    }
+    return `${pythonDev.firstName}, ${pythonDev.country}`
+}
